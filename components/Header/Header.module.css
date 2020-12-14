@@ -1,0 +1,14 @@
+.container {
+  @apply w-full flex flex-col;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.logo {
+  width: 96px;
+  height: 96px;
+  @apply p-1 bg-j-white;
+  box-shadow: 0px 3px 6px #00000029;
+}

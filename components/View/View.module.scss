@@ -1,0 +1,70 @@
+.view {
+  @apply px-7 py-8 text-j-black;
+  h1:global(.alt) {
+    @apply text-j-gray-light;
+  }
+}
+
+.white {
+  @apply text-j-black bg-j-white;
+  h1:global(.alt) {
+    @apply text-j-gray-light;
+  }
+}
+
+.yellow {
+  @apply text-j-black bg-j-yellow;
+  h1:global(.alt) {
+    @apply text-j-gray-light;
+  }
+}
+
+.magenta {
+  @apply text-j-white bg-j-magenta;
+  h1:global(.alt) {
+    @apply text-j-gray-lighter;
+  }
+}
+
+.green {
+  @apply text-j-white bg-j-green-light;
+  h1:global(.alt) {
+    @apply text-j-white;
+  }
+}
+
+.red {
+  @apply text-j-white bg-j-red;
+  h1:global(.alt) {
+    @apply text-j-gray-lighter;
+  }
+}
+
+.blue {
+  @apply text-j-black bg-j-blue-lighter;
+  h1:global(.alt) {
+    @apply text-j-gray;
+  }
+}
+
+.darkblue {
+  @apply text-j-white bg-j-blue;
+  h1:global(.alt) {
+    @apply text-j-gray-lighter;
+  }
+}
+
+.orange {
+  @apply text-j-white bg-j-orange;
+}
+
+.thinView {
+  @apply pb-0;
+}
+
+.healthyItem {
+  @apply text-4xl text-j-black text-center;
+  width: 4rem;
+  min-width: 4rem;
+  max-width: 4rem;
+}

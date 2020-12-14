@@ -1,0 +1,20 @@
+.input {
+  @apply border flex w-full justify-between text-sm py-2 px-3;
+  border-radius: 3px;
+  input {
+    @apply text-j-gray leading-none;
+    &::placeholder {
+      @apply text-j-gray-lighter;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  span {
+    @apply inline-block underline text-sm leading-none self-center;
+  }
+  input,
+  span {
+    @apply ml-4 self-center;
+  }
+}

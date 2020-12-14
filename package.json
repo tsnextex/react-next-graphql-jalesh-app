@@ -1,0 +1,40 @@
+{
+  "name": "jalesh",
+  "version": "0.2.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next export",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.2.5",
+    "@hookform/resolvers": "^1.0.1",
+    "classnames": "^2.2.6",
+    "express": "^4.17.1",
+    "graphql": "^15.4.0",
+    "http-proxy-middleware": "^1.0.6",
+    "joi": "^17.3.0",
+    "moment": "^2.29.1",
+    "next": "^10.0.1",
+    "next-page-transitions": "^1.0.0-beta.2",
+    "react": "16.13.1",
+    "react-burger-menu": "^2.9.0",
+    "react-dom": "16.13.1",
+    "react-grid-gallery": "^0.5.5",
+    "react-hook-form": "^6.11.0",
+    "react-lazy-load-image-component": "^1.5.0",
+    "react-photo-gallery": "^8.0.0",
+    "react-rotating-text": "^1.4.1",
+    "react-spring": "^8.0.27",
+    "use-position": "0.0.7"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "postcss-flexbugs-fixes": "4.2.1",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.1.2",
+    "sass": "^1.29.0",
+    "tailwindcss": "^1.9.6"
+  }
+}

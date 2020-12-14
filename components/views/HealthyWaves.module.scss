@@ -1,0 +1,11 @@
+.button {
+  @apply h-20 rounded-big my-8 w-full justify-between;
+  flex-direction: row !important;
+  i {
+    align-self: center;
+  }
+  img {
+    position: relative;
+    top: -0.75rem;
+  }
+}

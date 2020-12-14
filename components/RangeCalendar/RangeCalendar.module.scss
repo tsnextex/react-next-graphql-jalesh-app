@@ -1,0 +1,15 @@
+.calTitles,
+.calGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 14.285%);
+  text-align: center;
+}
+
+.selectable {
+  transition: 0.3s all ease-out;
+  background-color: rgba(80, 14, 75, 0.3);
+}
+
+.selected {
+  background-color: rgba(80, 14, 75, 1);
+}

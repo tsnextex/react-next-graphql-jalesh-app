@@ -1,0 +1,9 @@
+.routeView {
+  @apply bg-j-blue-lighter mb-12 rounded-big p-5;
+  box-shadow: 1px 1px 2px #00000033;
+  transition: 0.3s all ease-out;
+}
+
+.open {
+  @apply bg-j-magenta text-j-white;
+}

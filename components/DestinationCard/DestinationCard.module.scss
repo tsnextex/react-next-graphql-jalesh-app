@@ -1,0 +1,14 @@
+.card {
+  @apply flex w-full bg-j-white rounded-big px-5 py-7 mt-9 cursor-pointer;
+  box-shadow: 1px 1px 2px #00000033;
+}
+
+.routes {
+  @apply bg-j-magenta mt-9 -mx-7;
+}
+
+.route {
+  @apply flex flex-col px-8 py-10 ml-3 mb-10 rounded-small bg-j-white;
+  width: 16.5rem;
+  min-width: 16.5rem;
+}

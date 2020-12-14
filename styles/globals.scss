@@ -1,0 +1,124 @@
+@tailwind base;
+
+/* Write your own custom base styles here */
+
+@layer base {
+  @import url("https://fonts.googleapis.com/css2?family=Nobile:wght@400;500;700&display=swap");
+  @import "../vendor/fontawesome/scss/fontawesome.scss";
+  @import "../vendor/fontawesome/scss/regular.scss";
+  @import "../vendor/fontawesome/scss/light.scss";
+  @import "../vendor/fontawesome/scss/solid.scss";
+  @import "../vendor/fontawesome/scss/brands.scss";
+
+  body,
+  html {
+    font-family: "Nobile", sans-serif;
+    @apply bg-j-blue-lighter leading-tight; // 14px/20px
+  }
+
+  h1 {
+    /* 36/48 px */
+    @apply leading-11 text-4xl pb-4;
+  }
+
+  h1.alt {
+    /* 12/48 px */
+    @apply text-xs uppercase pb-0;
+  }
+
+  h2 {
+    /* 24/28 px */
+    @apply leading-7 text-2xl pb-7;
+  }
+
+  h3 {
+    /* 20/28 px */
+    @apply leading-7 text-xl;
+  }
+
+  h4 {
+    /* 18/24 px */
+    @apply leading-6 text-lg pb-7;
+  }
+
+  p {
+    /* 14/20 px */
+    @apply leading-tight text-sm;
+  }
+
+  p.small {
+    @apply text-xs leading-tiny text-j-gray pb-4;
+  }
+
+  small {
+    /* 10/18 px */
+    @apply leading-tiny text-tiny;
+  }
+}
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+/* Write you own custom component styles here */
+
+.arrow-right:after {
+  content: "\f178";
+  font-family: "Font Awesome 5 Pro";
+  vertical-align: -4%;
+  @apply text-sm ml-2 text-j-orange;
+}
+
+.arrow-up:after {
+  content: "\f077";
+  font-family: "Font Awesome 5 Pro";
+  vertical-align: -4%;
+  @apply text-sm ml-2 text-j-orange;
+}
+
+.arrow-down:after {
+  content: "\f078";
+  font-family: "Font Awesome 5 Pro";
+  vertical-align: -4%;
+  @apply text-sm ml-2 text-j-orange;
+}
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+
+/* Your own custom utilities */
+
+.page-transition-enter {
+  opacity: 0;
+}
+.page-transition-enter-active {
+  opacity: 1;
+  transition: opacity 200ms;
+}
+.page-transition-exit {
+  opacity: 1;
+}
+.page-transition-exit-active {
+  opacity: 0;
+  transition: opacity 200ms;
+}
+
+.react-rotating-text-cursor {
+  border-color: #500e4b;
+  color: #500e4b;
+  animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s
+    infinite;
+}
+
+@keyframes blinking-cursor {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+  }
+}
